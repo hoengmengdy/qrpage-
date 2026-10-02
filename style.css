@@ -1,5 +1,21 @@
 /* LSV Facebook Page */
 
+@font-face {
+    font-family: "Kantumruy";
+    src: url("assets/fonts/Kantumruy-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kantumruy";
+    src: url("assets/fonts/Kantumruy-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 :root {
     color-scheme: light;
     --accent: #00643c;
@@ -8,7 +24,7 @@
     --ink: #16382c;
     --muted: #63766c;
     --border: #e3ece6;
-    font-family: "Noto Sans Khmer", "Khmer OS System", "Khmer UI", "Khmer Sangam MN", "Leelawadee UI", sans-serif;
+    font-family: "Kantumruy", "Khmer OS System", "Khmer UI", "Khmer Sangam MN", "Leelawadee UI", sans-serif;
     line-height: 1.8;
     color: var(--ink);
     background: #f8faf9;
