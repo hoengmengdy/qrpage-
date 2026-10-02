@@ -3,5 +3,11 @@
   "use strict";
 
   const year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
+  if (year) {
+    const khmerDigits = "០១២៣៤៥៦៧៨៩";
+    year.textContent = String(new Date().getFullYear()).replace(
+      /\d/g,
+      (digit) => khmerDigits[Number(digit)]
+    );
+  }
 })();

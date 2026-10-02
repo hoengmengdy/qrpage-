@@ -1,120 +1,398 @@
 /* LSV Facebook Page */
+
 :root {
-  color-scheme: light;
-  --blue: #1877f2;
-  --blue-dark: #0863d9;
-  --ink: #152a43;
-  --muted: #64748b;
-  --border: #e5ebf3;
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  color: var(--ink);
-  background: #f8fafc;
-  font-synthesis: none;
-  -webkit-font-smoothing: antialiased;
+    color-scheme: light;
+    --accent: #00643c;
+    --accent-dark: #004e2e;
+    --facebook-blue: #1877f2;
+    --ink: #16382c;
+    --muted: #63766c;
+    --border: #e3ece6;
+    font-family: "Noto Sans Khmer", "Khmer OS System", "Khmer UI", "Khmer Sangam MN", "Leelawadee UI", sans-serif;
+    line-height: 1.8;
+    color: var(--ink);
+    background: #f8faf9;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  background:
-    radial-gradient(ellipse at 50% 15%, #edf4ff 0%, transparent 56%),
-    #f8fafc;
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(ellipse at 50% 15%, #edf6f0 0%, transparent 56%), #f8faf9;
 }
-a { color: inherit; }
-.icon-definitions { position: absolute; width: 0; height: 0; overflow: hidden; }
-.icon { width: 24px; height: 24px; flex-shrink: 0; }
+
+a {
+    color: inherit;
+}
+
+.icon-definitions {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
 .site-header {
-  min-height: 88px;
-  width: min(1160px, calc(100% - 80px));
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border-bottom: 1px solid var(--border);
+    min-height: 88px;
+    width: min(1160px, calc(100% - 80px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
 }
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; border-radius: 8px; }
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
-  color: white;
-  background: var(--blue);
-  box-shadow: 0 4px 10px #1877f21a;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 50px;
+    flex-shrink: 0;
 }
-.brand-name { font-size: 19px; font-weight: 750; letter-spacing: -.5px; }
-.brand-divider { color: #c2cbd8; font-weight: 400; margin: 0 12px; }
-.brand-detail { color: var(--muted); font-size: 13px; font-weight: 400; letter-spacing: 0; }
-.header-label { display: flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 650; letter-spacing: 1.5px; color: #5a6b81; }
-.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 4px #1877f20c; }
-main { flex: 1; width: min(896px, calc(100% - 48px)); margin: 0 auto; padding: 54px 0 38px; }
-.intro { text-align: center; margin-bottom: 38px; }
-.eyebrow { margin: 0 0 14px; font-size: 10px; font-weight: 700; letter-spacing: 2.3px; color: #426b9e; }
-h1 { margin: 0; font-size: clamp(36px, 5vw, 52px); font-weight: 750; letter-spacing: -2px; line-height: 1.15; }
-h1 span { color: var(--blue); }
-.subtitle { margin: 17px 0 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
-.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+
+.brand-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.brand-divider {
+    color: #c4d2c9;
+    font-weight: 400;
+    margin: 0 12px;
+}
+
+.brand-detail {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.header-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5c7265;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px #00643c0c;
+}
+
+main {
+    flex: 1;
+    width: min(896px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 54px 0 38px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.eyebrow {
+    margin: 0 0 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #387153;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+h1 span {
+    color: var(--accent);
+}
+
+.subtitle {
+    margin: 17px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
 .profile-card {
-  min-width: 0;
-  padding: 23px 30px 28px;
-  background: white;
-  border: 1px solid #e2e9f2;
-  border-radius: 22px;
-  box-shadow: 0 4px 6px #1f3b5c02, 0 12px 32px #1f3b5c06;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    min-width: 0;
+    padding: 23px 30px 28px;
+    background: white;
+    border: 1px solid #e2ebe5;
+    border-radius: 22px;
+    box-shadow: 0 4px 6px #1f3b2c02, 0 12px 32px #1f3b2c06;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
-.card-topline { display: flex; justify-content: space-between; align-items: center; color: #61738c; font-size: 9px; letter-spacing: 1.6px; font-weight: 650; }
-.card-number { font-size: 11px; letter-spacing: 1px; color: #8492a5; font-weight: 500; }
-.profile-heading { text-align: center; padding-top: 23px; }
-.facebook-mark { display: grid; place-items: center; width: 50px; height: 50px; margin: 0 auto 14px; border-radius: 50%; color: var(--blue); background: #edf4ff; border: 1px solid #e2edff; }
-.facebook-mark .icon { width: 30px; height: 30px; }
-h2 { margin: 0; font-size: 25px; line-height: 1.3; font-weight: 700; letter-spacing: -.65px; }
-.handle { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
-.facebook-button { margin-top: 28px; display: flex; align-items: center; justify-content: center; position: relative; gap: 9px; min-height: 49px; padding: 12px 40px; border-radius: 10px; color: white; background: var(--blue); text-decoration: none; font-size: 13px; line-height: 1.5; font-weight: 600; box-shadow: 0 3px 8px #1877f21a; transition: background .2s ease, box-shadow .2s ease, transform .2s ease; }
-.facebook-button .icon { width: 18px; height: 18px; }
-.facebook-button .external-icon { position: absolute; right: 17px; width: 16px; height: 16px; opacity: .85; }
-.facebook-button:active { transform: translateY(1px); }
-a:focus-visible { outline: 3px solid #0757bd; outline-offset: 5px; }
-.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: min(1160px, calc(100% - 80px)); margin: 0 auto; padding: 23px 0; border-top: 1px solid var(--border); color: #64748b; font-size: 11px; line-height: 1.5; }
-.site-footer p { margin: 0; }
+
+.card-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: #62766b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-number {
+    font-size: 12px;
+    color: #86988c;
+    font-weight: 500;
+}
+
+.profile-heading {
+    text-align: center;
+    padding-top: 23px;
+}
+
+. -mark {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    color: var(--facebook-blue);
+    background: #edf4ff;
+    border: 1px solid #e2edff;
+}
+
+.facebook-mark .icon {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.handle {
+    margin: 6px 0 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.facebook-button {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 9px;
+    min-height: 49px;
+    padding: 12px 40px;
+    border-radius: 10px;
+    color: white;
+    background: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 600;
+    box-shadow: 0 3px 8px #00643c1a;
+    transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.facebook-button .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.facebook-button > .icon:first-child {
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    border-radius: 50%;
+    color: var(--facebook-blue);
+    background: white;
+}
+
+.facebook-button .external-icon {
+    position: absolute;
+    right: 17px;
+    width: 16px;
+    height: 16px;
+    opacity: .85;
+}
+
+.facebook-button:active {
+    transform: translateY(1px);
+}
+
+a:focus-visible {
+    outline: 3px solid #004e2e;
+    outline-offset: 5px;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: min(1160px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 23px 0;
+    border-top: 1px solid var(--border);
+    color: #63766c;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.site-footer p {
+    margin: 0;
+}
 
 @media (hover: hover) {
-  .profile-card:hover { transform: translateY(-5px); border-color: #cbdcf5; box-shadow: 0 16px 40px #1f3b5c0d; }
-  .facebook-button:hover { background: var(--blue-dark); box-shadow: 0 5px 12px #1877f230; }
+    .profile-card:hover {
+        transform: translateY(-5px);
+        border-color: #c4dfce;
+        box-shadow: 0 16px 40px #1f3b2c0d;
+    }
+    .facebook-button:hover {
+        background: var(--accent-dark);
+        box-shadow: 0 5px 12px #00643c30;
+    }
 }
+
 @media (max-width: 760px) {
-  .site-header, .site-footer { width: calc(100% - 40px); }
-  .site-header { min-height: 76px; }
-  .brand-detail, .brand-divider { display: none; }
-  main { width: min(460px, calc(100% - 40px)); padding-top: 40px; }
-  .intro { margin-bottom: 28px; }
-  .eyebrow { font-size: 9px; letter-spacing: 1.8px; }
-  h1 { letter-spacing: -1.5px; }
-  .subtitle { max-width: 310px; margin: 14px auto 0; font-size: 14px; }
-  .cards { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .profile-card { padding: 23px 26px 26px; }
-  .site-footer { justify-content: center; flex-direction: column; gap: 5px; text-align: center; padding: 20px 0; }
+    .site-header,
+    .site-footer {
+        width: calc(100% - 40px);
+    }
+    .site-header {
+        min-height: 76px;
+    }
+    .brand-detail,
+    .brand-divider {
+        display: none;
+    }
+    main {
+        width: min(460px, calc(100% - 40px));
+        padding-top: 40px;
+    }
+    .intro {
+        margin-bottom: 28px;
+    }
+    .eyebrow {
+        font-size: 12px;
+    }
+    .subtitle {
+        max-width: 310px;
+        margin: 14px auto 0;
+        font-size: 14px;
+    }
+    .cards {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+    .profile-card {
+        padding: 23px 26px 26px;
+    }
+    .site-footer {
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
+
 @media (max-width: 360px) {
-  .header-label { letter-spacing: 1px; font-size: 9px; }
-  .profile-card { padding: 20px 18px 24px; }
-  h1 { font-size: 34px; }
+    .header-label {
+        font-size: 11px;
+    }
+    .profile-card {
+        padding: 20px 18px 24px;
+    }
+    h1 {
+        font-size: 28px;
+    }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; }
-  .profile-card:hover, .facebook-button:active { transform: none; }
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+    .profile-card:hover,
+    .facebook-button:active {
+        transform: none;
+    }
 }
+
 @media print {
-  body { background: white; }
-  .site-header, .site-footer { width: 100%; }
-  main { width: 100%; padding: 24px 0; }
-  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .profile-card { box-shadow: none; break-inside: avoid; padding: 20px; }
-  .facebook-button { color: var(--blue); background: white; border: 1px solid var(--blue); box-shadow: none; }
+    body {
+        background: white;
+    }
+    .site-header,
+    .site-footer {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        padding: 24px 0;
+    }
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+    .profile-card {
+        box-shadow: none;
+        break-inside: avoid;
+        padding: 20px;
+    }
+    .facebook-button {
+        color: var(--accent);
+        background: white;
+        border: 1px solid var(--accent);
+        box-shadow: none;
+    }
 }
