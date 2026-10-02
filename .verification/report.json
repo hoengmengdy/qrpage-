@@ -1,0 +1,66 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "generated_QRs": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ],
+      "year": "២០២៦"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "generated_QRs": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ],
+      "year": "២០២៦"
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "generated_QRs": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ],
+      "year": "២០២៦"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "generated_QRs": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ],
+      "year": "២០២៦"
+    }
+  ],
+  "fallbacks": [
+    {
+      "width": 1440,
+      "decoded": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ]
+    },
+    {
+      "width": 390,
+      "decoded": [
+        "https://www.facebook.com/nutsamphois",
+        "https://www.facebook.com/lsvindustry"
+      ]
+    }
+  ],
+  "button_clicks": [
+    "https://www.facebook.com/nutsamphois",
+    "https://www.facebook.com/lsvindustry"
+  ],
+  "runtimeErrors": [],
+  "sourceSHA256": {
+    "index.html": "d435ce7788c091878dc369ef9e78da970f5ea6cd450404edfb625efbdab28742",
+    "style.css": "d36a49b61549fb847a07d9d9412a55ac40f92e1d94777e5c805fb35508d42b45",
+    "script.js": "f4ddae61dfbffab97957e88c4af962dc95fd435289c5e70104fe01a3b167e0af"
+  }
+}

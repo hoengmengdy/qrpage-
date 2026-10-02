@@ -9,10 +9,12 @@
     <title>ទំព័រហ្វេសប៊ុក អិលអេសវី</title>
     <link rel="icon" type="image/png" href="Logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="assets/vendor/qrcode.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">រំលងទៅមាតិកា</a>
     <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <defs>
       <symbol id="icon-facebook" viewBox="0 0 24 24">
@@ -39,13 +41,18 @@
             <p class="subtitle">ចូលទៅកាន់ទំព័រហ្វេសប៊ុកផ្លូវការរបស់យើង ដើម្បីទទួលបានព័ត៌មានថ្មីៗ</p>
         </section>
 
-        <section class="cards" aria-label="ទំព័រហ្វេសប៊ុករបស់យើង">
+        <section id="pages" class="cards" aria-label="ទំព័រហ្វេសប៊ុករបស់យើង">
             <article class="profile-card" aria-labelledby="nut-name">
                 <div class="card-topline"><span>គណនីផ្ទាល់ខ្លួន</span><span class="card-number">០១</span></div>
                 <div class="profile-heading">
                     <span class="facebook-mark"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg></span>
                     <h2 id="nut-name">នុត សម្ផស្ស</h2>
                     <p class="handle" lang="en">@nutsamphois</p>
+                </div>
+                <div class="qr-frame">
+                    <div class="qr-code" data-url="https://www.facebook.com/nutsamphois" data-name="Nut Samphois">
+                        <img src="assets/qr/nut-samphois.png" alt="QR code for Nut Samphois on Facebook" width="370" height="370">
+                    </div>
                 </div>
                 <a class="facebook-button" href="https://www.facebook.com/nutsamphois" target="_blank" rel="noopener noreferrer" aria-label="ចូលទៅកាន់ហ្វេសប៊ុករបស់ នុត សម្ផស្ស (បើកក្នុងផ្ទាំងថ្មី)">
                     <svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg>
@@ -60,6 +67,11 @@
                     <span class="facebook-mark"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg></span>
                     <h2 id="lsv-name">LSV Industry</h2>
                     <p class="handle" lang="en">@lsvindustry</p>
+                </div>
+                <div class="qr-frame">
+                    <div class="qr-code" data-url="https://www.facebook.com/lsvindustry" data-name="LSV Industry">
+                        <img src="assets/qr/lsv-industry.png" alt="QR code for LSV Industry on Facebook" width="370" height="370">
+                    </div>
                 </div>
                 <a class="facebook-button" href="https://www.facebook.com/lsvindustry" target="_blank" rel="noopener noreferrer" aria-label="ចូលទៅកាន់ហ្វេសប៊ុករបស់ឧស្សាហកម្ម អិលអេសវី (បើកក្នុងផ្ទាំងថ្មី)">
                     <svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg>
